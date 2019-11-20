@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
+html * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#nav-bar, #footer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#nav-bar .logo, #footer .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#nav-bar .logo a, #footer .logo a {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+
+#nav-bar ul, #footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav-bar ul li, #footer ul li {
+  list-style: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#nav-bar ul li a, #footer ul li a {
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+  min-height: calc(80vh - 4rem);
+}
+
+.converterWrapper div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 1rem;
+}
+
+.converterWrapper div:nth-child(1) section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.converterWrapper div:nth-child(1) section select {
+  padding: .5rem;
+}
+
+.converterWrapper div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.converterWrapper div:nth-child(2) section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.converterWrapper div:nth-child(2) section input {
+  padding: 1rem;
+}
+
+.converterWrapper div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.converterWrapper div:nth-child(3) button {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  letter-spacing: 3px;
+}
+
+.converterWrapper div:nth-child(3) button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f362";
+  font-size: 1.6rem;
+  margin-right: .5rem;
+}
+
+.converterWrapper .exchangeResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+.converterWrapper .exchangeResult .value {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.converterWrapper .exchangeResult .flag {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=main.css.map */

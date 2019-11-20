@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap');
+html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+#nav-bar, #footer {
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba($color: #000000, $alpha: .7);
+    .logo {
+        align-self: center;
+        a {
+            padding: 1rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 300;
+            color: white;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        li {
+            list-style: none;
+            align-self: center;
+            a {
+                padding: 1rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 300;
+                color: white;
+            }
+        }
+    }
+}
+.container{
+    width: 90%;
+    margin: 2rem auto;
+    min-height: calc(80vh - 4rem);
+}
+.converterWrapper {
+    div:nth-child(1){
+        display: flex;
+        justify-content: space-evenly;
+        flex-basis: 100%;
+        margin: 1rem;
+        section {
+            display: flex;
+            flex-flow: column nowrap;
+            select {
+                padding: .5rem;
+            }
+        }
+    }
+    div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        section {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+            input {
+                padding: 1rem;
+            }
+        }
+    }
+    div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        button {
+            flex-basis: 50%;
+            padding: 1rem;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+            letter-spacing: 3px;
+            &::before{
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900; 
+                content: "\f362";
+                font-size: 1.6rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+    .exchangeResult{
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        .value {
+            align-self: center;
+        }
+        .flag {
+            margin-left: 5px;
+        }
+    }
+}
