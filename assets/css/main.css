@@ -191,6 +191,26 @@ html * {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+}
+
+.converterWrapper div:nth-child(3) button:hover:not([enabled]) {
+  cursor: not-allowed;
+}
+
+.converterWrapper div:nth-child(3) button:hover:not([disabled]) {
+  cursor: pointer;
+}
+
+.converterWrapper div:nth-child(3) button:disabled {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.converterWrapper div:nth-child(3) button:focus {
+  outline: none;
 }
 
 .converterWrapper div:nth-child(3) button::before {

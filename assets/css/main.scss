@@ -102,6 +102,22 @@ html * {
             text-transform: uppercase;
             display: flex;
             justify-content: space-around;
+            border-radius: 6px;
+            background: rgba($color: #000000, $alpha: .7);
+            color: white;
+            border: none;
+            &:hover:not([enabled]) {
+                cursor: not-allowed;
+            }
+            &:hover:not([disabled]) {
+                cursor: pointer;
+            }
+            &:disabled {
+                color: rgba($color: #FFF, $alpha: .7);
+            }
+            &:focus {
+                outline: none;
+            }
             &::before{
                 font-family: "Font Awesome 5 Free"; 
                 font-weight: 900; 
