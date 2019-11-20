@@ -62,6 +62,16 @@ html * {
   width: 90%;
   margin: 2rem auto;
   min-height: calc(80vh - 4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .converterWrapper div:nth-child(1) {
@@ -90,6 +100,15 @@ html * {
   padding: .5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .converterWrapper div:nth-child(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .converterWrapper div:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,6 +135,41 @@ html * {
   padding: 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .converterWrapper div:nth-child(2) section {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .converterWrapper div:nth-child(2) section {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .converterWrapper div:nth-child(2) section {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .converterWrapper div:nth-child(2) section {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .converterWrapper div:nth-child(2) section {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 .converterWrapper div:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +191,6 @@ html * {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  letter-spacing: 3px;
 }
 
 .converterWrapper div:nth-child(3) button::before {
@@ -146,6 +199,52 @@ html * {
   content: "\f362";
   font-size: 1.6rem;
   margin-right: .5rem;
+  margin-top: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+  .converterWrapper div:nth-child(3) button {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .converterWrapper div:nth-child(3) button {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .converterWrapper div:nth-child(3) button {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .converterWrapper div:nth-child(3) button {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .converterWrapper div:nth-child(3) button {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 1.4rem;
+  }
+  .converterWrapper div:nth-child(3) button::before {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .converterWrapper div:nth-child(3) button::before {
+    display: none;
+  }
 }
 
 .converterWrapper .exchangeResult {

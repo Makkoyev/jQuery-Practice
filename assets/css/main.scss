@@ -42,6 +42,9 @@ html * {
     width: 90%;
     margin: 2rem auto;
     min-height: calc(80vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .converterWrapper {
     div:nth-child(1){
@@ -56,6 +59,9 @@ html * {
                 padding: .5rem;
             }
         }
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
     }
     div:nth-child(2){
         display: flex;
@@ -67,6 +73,21 @@ html * {
             flex-basis: 50%;
             input {
                 padding: 1rem;
+            }
+            @media screen and (max-width: 1000px) {
+                flex-basis: 60%;
+            }
+            @media screen and (max-width: 900px) {
+                flex-basis: 70%;
+            }
+            @media screen and (max-width:  800px) {
+                flex-basis: 80%;
+            }
+            @media screen and (max-width:  700px) {
+                flex-basis: 90%;
+            }
+            @media screen and (max-width:  600px) {
+                flex-basis: 100%;
             }
         }
     }
@@ -81,13 +102,37 @@ html * {
             text-transform: uppercase;
             display: flex;
             justify-content: space-around;
-            letter-spacing: 3px;
             &::before{
                 font-family: "Font Awesome 5 Free"; 
                 font-weight: 900; 
                 content: "\f362";
                 font-size: 1.6rem;
                 margin-right: .5rem;
+                margin-top: 3px;
+            }
+            @media screen and (max-width: 1000px) {
+                flex-basis: 60%;
+            }
+            @media screen and (max-width: 900px) {
+                flex-basis: 70%;
+            }
+            @media screen and (max-width:  800px) {
+                flex-basis: 80%;
+            }
+            @media screen and (max-width:  700px) {
+                flex-basis: 90%;
+            }
+            @media screen and (max-width:  600px) {
+                flex-basis: 100%;
+                font-size: 1.4rem;
+                &::before{
+                    font-size: 1.4rem;
+                }
+            }
+            @media screen and (max-width:  406px) {
+                &::before{
+                    display: none;
+                }
             }
         }
     }
